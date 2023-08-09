@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Source+Sans+Pro:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+		<title>Massively Landing Page</title>
+	</head>
+
+	<body>
+		<header>
+			<section class="nav-header" id="nav-header">
+				<button class="nav-toggle" id="nav-toggle">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-menu-2"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="white"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M4 6l16 0"></path>
+						<path d="M4 12l16 0"></path>
+						<path d="M4 18l16 0"></path>
+					</svg>
+				</button>
+				<nav class="nav-container" id="nav-container">
+					<ul class="nav-links-list">
+						<li class="nav-link active"><a href="">This is massively</a></li>
+						<li class="nav-link"><a href="">Generic page</a></li>
+						<li class="nav-link"><a href="">Elements reference</a></li>
+					</ul>
+					<ul class="social-icons-list">
+						<li class="social-link">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-brand-twitter-filled"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path
+									d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z"
+									stroke-width="0"
+									fill="currentColor"
+								></path>
+							</svg>
+						</li>
+						<li class="social-link">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-brand-facebook-filled"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path
+									d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"
+									stroke-width="0"
+									fill="currentColor"
+								></path>
+							</svg>
+						</li>
+						<li class="social-link">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-brand-instagram"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path
+									d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+								></path>
+								<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+								<path d="M16.5 7.5l0 .01"></path>
+							</svg>
+						</li>
+						<li class="social-link">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-brand-github"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path
+									d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+								></path>
+							</svg>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<section class="hero-image">
+				<div class="hero-text">
+					<h1>
+						This is <br />
+						massively
+					</h1>
+					<p class="hero-text-p | clr-neutral-100">
+						A free, fully responsive HTML5 + CSS3 site template designed by
+						<a href="#">@ajkln</a> for <a href="#">HTML5 UP</a> and released for
+						free under the <a href="#">Creative Commons License</a>.
+					</p>
+					<span
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-arrow-down"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 5l0 14"></path>
+							<path d="M18 13l-6 6"></path>
+							<path d="M6 13l6 6"></path></svg
+					></span>
+				</div>
+			</section>
+		</header>
+		<main class="container">
+			<!-- Recent Blog -->
+			<section class="container">
+				<div class="recent-blog-article">
+					<p class="blog-date">April 25, 2017</p>
+					<h2 class="blog-title">And this is a massive headline</h2>
+					<p class="blog-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+						quisquam laborum quia architecto alias, quos minus totam eaque!
+						Repudiandae odit itaque hic tempore?
+					</p>
+					<img
+						src="/assets/images/pic01.jpg"
+						alt="Woman sitting on a stool, fitting her jeans. Only the legs show."
+						class="img blog-img"
+					/>
+					<a href="" class="btn">Full story</a>
+				</div>
+			</section>
+			<hr />
+
+			<!-- Blog Cards -->
+			<section class="container blog-cards">
+				<div class="blog-card | border-right">
+					<p class="blog-date">April 24, 2017</p>
+					<h2 class="blog-title">Sed magna ipsum faucibus</h2>
+					<img src="/assets/images/pic02.jpg" alt="Old rusted orange Volkswagen Beetle" class="img blog-img" />
+					<p class="blog-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+						quisquam laborum quia architecto alias, quos minus totam eaque!
+						Repudiandae odit itaque hic tempore?
+					</p>
+					<a href="" class="btn">Full story</a>
+				</div>
+				<div class="blog-card">
+					<p class="blog-date">April 22, 2017</p>
+					<h2 class="blog-title">Primus Eget Imperdiet Lorem</h2>
+					<img src="/assets/images/pic03.jpg" alt="Older Man ready to cross the street. Backview." class="img blog-img" />
+					<p class="blog-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+						quisquam laborum quia architecto alias, quos minus totam eaque!
+						Repudiandae odit itaque hic tempore?
+					</p>
+					<a href="" class="btn">Full story</a>
+				</div>
+				<div class="blog-card | border-right">
+					<p class="blog-date">April 18, 2017</p>
+					<h2 class="blog-title">Ante Mattis Interdum Dolor</h2>
+					<img src="/assets/images/pic04.jpg" alt="Old fashioned photo camera, in the style of a Rolleiflex" class="img blog-img" />
+					<p class="blog-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+						quisquam laborum quia architecto alias, quos minus totam eaque!
+						Repudiandae odit itaque hic tempore?
+					</p>
+					<a href="" class="btn">Full story</a>
+				</div>
+				<div class="blog-card">
+					<p class="blog-date">April 14, 2017</p>
+					<h2 class="blog-title">Tempus Sed Nulla Imperdiet</h2>
+					<img src="/assets/images/pic05.jpg" alt="Bare mountain in the sun" class="img blog-img" />
+					<p class="blog-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+						quisquam laborum quia architecto alias, quos minus totam eaque!
+						Repudiandae odit itaque hic tempore?
+					</p>
+					<a href="" class="btn">Full story</a>
+				</div>
+				<div class="blog-card | border-right">
+					<p class="blog-date">April 11, 2017</p>
+					<h2 class="blog-title">Odio Magna Sed Consectetur</h2>
+					<img src="/assets/images/pic06.jpg" alt="Chino-wearing man holing a camera and walking in nature." class="img blog-img" />
+					<p class="blog-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+						quisquam laborum quia architecto alias, quos minus totam eaque!
+						Repudiandae odit itaque hic tempore?
+					</p>
+					<a href="" class="btn">Full story</a>
+				</div>
+				<div class="blog-card">
+					<p class="blog-date">April 7, 2017</p>
+					<h2 class="blog-title">Augue Lorem Primis Vestibilum</h2>
+					<img src="/assets/images/pic07.jpg" alt="White Range Rover jeep in an Icelandic like landscape" class="img blog-img" />
+					<p class="blog-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+						quisquam laborum quia architecto alias, quos minus totam eaque!
+						Repudiandae odit itaque hic tempore?
+					</p>
+					<a href="" class="btn">Full story</a>
+				</div>
+			</section>
+			<a href="" class="btn page-btn">Next ></a>
+			<hr />
+			<section class="form-container container">
+				<form class="border-right">
+					<label for="fullname">Name</label>
+					<input type="text" id="fullname" name="fullname" />
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required />
+					<label for="textmessage">Message</label>
+					<textarea
+						name="textmessage"
+						id="textmessage"
+						cols="30"
+						rows="5"
+					></textarea>
+					<button type="submit" class="btn" id="form-button">
+						Send Message
+					</button>
+				</form>
+				<hr class="hidden-mobile" />
+				<div class="contact-container">
+					<div class="contact">
+						<p>Address</p>
+						<p>1234 Somewhere Road #87257<br />Nashville, TN 000-000</p>
+					</div>
+					<hr />
+					<div class="contact">
+						<p>Phone</p>
+						<a href="000 00 00 00">000 00 00 00</a>
+					</div>
+					<hr />
+					<div class="contact">
+						<p>Email</p>
+						<a href="mailto: info@untitled.ltd">info@untitled.ltd</a>
+					</div>
+					<hr />
+					<nav class="contact social-nav">
+						<p>Social</p>
+						<ul class="icon-links">
+							<li class="icon-link">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-twitter-filled"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path
+										d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z"
+										stroke-width="0"
+										fill="currentColor"
+									></path>
+								</svg>
+							</li>
+							<li class="icon-link">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-facebook-filled"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path
+										d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"
+										stroke-width="0"
+										fill="currentColor"
+									></path>
+								</svg>
+							</li>
+							<li class="icon-link">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-instagram"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path
+										d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+									></path>
+									<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+									<path d="M16.5 7.5l0 .01"></path>
+								</svg>
+							</li>
+							<li class="icon-link">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-github"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path
+										d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+									></path>
+								</svg>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>&#169; Untitled</p>
+			<p>Design: <a href="#">HTML5 UP</a></p>
+			<p>Demo Images: <a href="#">Unsplash</a></p>
+		</footer>
+	</body>
+</html>
