@@ -1,6 +1,6 @@
 # codedamn - HTML5 Massively Landing Page
 
-![Design for the project](https://github.com/codedamn-projects/html5-massively-landing-page)
+[Design for the project](https://github.com/codedamn-projects/html5-massively-landing-page)
 
 ## Table of contents
 
@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](/assets/screenshots/screenshot-desktop.jpg)
-![](/assets/screenshots/screenshot-mobile.jpg)
+![](assets/screenshots/screenshot-desktop.jpg)
+![](assets/screenshots/screenshot-mobile.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/graficdoctor/codedamn-coding-projects/tree/main/003-massively-landing-page)
+- Live Site URL: [Github Pages](https://graficdoctor.github.io/codedamn-coding-projects/003-massively-landing-page/)
 
 ## My process
 
