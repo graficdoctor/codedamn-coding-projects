@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+header {
+	background-image: url('assets/images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-block: 1.5rem 5rem;
+}
+
+.img {
+	max-width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Typography */
+header h3 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.2;
+}
+
+footer {
+	font-size: 0.8rem;
+}
+
+/* General Classes */
+
+.container {
+	width: min(90vw, 1110px);
+	margin: 0 auto;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.main-navigation a:not(.nav-link-item) {
+	font-size: 0.875rem;
+}
+
+.main-navigation a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.nav-links-list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	gap: 1.5rem;
+}
+
+.logo-img {
+	width: 250px;
+	margin-block: 2rem 1rem;
+	margin-inline: auto;
+}
+
+.fliers {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+	padding-top: 2rem;
+}
+
+.flier {
+	border-radius: 10px;
+	border: 1px solid lightgray;
+	overflow: hidden;
+}
+
+.flier-img {
+	height: 150px;
+	width: 100%;
+}
+
+.flier-text-container {
+	padding: 1rem 1.25rem;
+}
+
+.flier-text-container h3 {
+	font-size: 1.25rem;
+}
+
+.flier-text-container p {
+	color: darkgray;
+	font-weight: 300;
+}
+
+@media (min-width: 40em) {
+	.fliers {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
