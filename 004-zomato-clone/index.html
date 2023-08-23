@@ -30,24 +30,37 @@
 					</div>
 				</nav>
 				<img src="assets/images/zomato-logo.png" class="img logo-img" alt="" />
-				<h3>Discover the best food & drinks in Delhi NCR</h3>
-				<label for="town-selection"
-					><i class="fa-solid fa-location-dot"></i
-				></label>
-				<select name="town-selection" id="town-selection">
-					<option value="chennai">Chennai</option>
-					<option value="delhi">Delhi NCR</option>
-				</select>
-				<!-- insert image (magnifier -> see I Code This) -->
-				<input
-					type="text"
-					placeholder="Search for a restaurant, cuisine or a dish"
-				/>
+				<h1>Discover the best food & drinks in Delhi NCR</h1>
+				<div class="wrapper">
+					<div class="wrapper-selection">
+						<label for="town-selection" class="selection-label"
+							><i class="fa-solid fa-location-dot"></i
+						></label>
+						<select name="town-selection" id="town-selection" class="selection">
+							<option value="chennai">Chennai</option>
+							<option value="delhi">Delhi NCR</option>
+						</select>
+					</div>
+					<div class="wrapper-input">
+						<button class="search-btn" type="button">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+						<input
+							type="text"
+							placeholder="Search for a restaurant, cuisine or a dish"
+							class="search-input"
+						/>
+					</div>
+				</div>
 			</header>
 
 			<section class="fliers container">
 				<div class="flier">
-					<img src="assets/images/online-food.png" class="img flier-img" alt="" />
+					<img
+						src="assets/images/online-food.png"
+						class="img flier-img"
+						alt=""
+					/>
 					<div class="flier-text-container">
 						<h3>Order Online</h3>
 						<p>Stay home and order to your doorstep</p>
@@ -61,20 +74,17 @@
 					</div>
 				</div>
 				<div class="flier">
-					<img src="assets/images/night-life.png" class="img flier-img" alt="" />
+					<img
+						src="assets/images/night-life.png"
+						class="img flier-img"
+						alt=""
+					/>
 					<div class="flier-text-container">
 						<h3>Nightlife and Clubs</h3>
 						<p>Explore the city's top nightlife outlets</p>
 					</div>
 				</div>
 			</section>
-
-			<!-- <footer>
-				<img src="assets/images/iphone.png" />
-				<h3>Get the Zomato App</h3>
-				<img src="assets/images/app-store.png" />
-				<img src="assets/images/google-play.png" />
-			</footer> -->
 		</section>
 	</body>
 </html>
