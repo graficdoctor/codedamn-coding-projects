@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Astral Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="portfolio section-center">
+			<nav class="btn-container">
+				<button class="tab-btn active" data-id="home">
+					<i class="fa-solid fa-home"></i>
+				</button>
+				<button class="tab-btn" data-id="work">
+					<i class="fa-solid fa-folder"></i>
+				</button>
+				<button class="tab-btn" data-id="contact">
+					<i class="fa-solid fa-envelope"></i>
+				</button>
+				<button class="tab-btn" data-id="social">
+					<i class="fa-brands fa-twitter"></i>
+				</button>
+			</nav>
+
+			<article class="portfolio-content">
+				<!-- start of home -->
+				<div class="content content-home active" id="home">
+					<article class="about">
+						<h1>Jane Doe</h1>
+						<h3>Senior Astral Projectionist</h3>
+					</article>
+					<article>
+						<img
+							src="assets/images/me.jpg"
+							alt="Jane Doe"
+							class="img about-img"
+						/>
+					</article>
+				</div>
+				<!-- end of home -->
+
+				<!-- start of work -->
+				<div class="content" id="work">
+					<article class="work">
+						<h2>Work</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+							dolorum ex, esse quibusdam obcaecati sit quia maiores libero
+							cupiditate voluptas.
+						</p>
+					</article>
+					<article class="work-gallery">
+						<img src="assets/images/pic01.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic02.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic03.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic04.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic05.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic06.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic07.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic08.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic09.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic10.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic11.jpg" alt="" class="img work-img" />
+						<img src="assets/images/pic12.jpg" alt="" class="img work-img" />
+					</article>
+				</div>
+				<!-- end of work -->
+
+				<!-- start of contact -->
+				<div class="content" id="contact">
+					<article class="contact">
+						<h2>Contact Me</h2>
+						<form class="form-container">
+							<div class="form-row">
+								<input
+									type="text"
+									name="fullname"
+									id="fullname"
+									aria-label="fullname"
+									placeholder="Name"
+									required
+								/>
+								<input
+									type="email"
+									name="email"
+									id="email"
+									placeholder="Email"
+									aria-label="email"
+									required
+								/>
+							</div>
+							<input
+								type="text"
+								name="subject"
+								id="subject"
+								placeholder="Subject"
+								aria-label="subject"
+								required
+							/>
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Message"
+								aria-label="message"
+								required
+							></textarea>
+							<button class="btn submit-btn" type="submit">Send Message</button>
+						</form>
+					</article>
+				</div>
+				<!-- end of contact -->
+
+				<!-- start of social -->
+				<div class="content" id="social">
+					<article class="social">
+						<h2>Find Me</h2>
+						<ul class="social-links-list">
+							<li>
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-dribbble"></i></a>
+							</li>
+						</ul>
+					</article>
+				</div>
+				<!-- end of social -->
+			</article>
+      
+			<footer>
+				<ul class="footer-info">
+					<li>&copy; Untitled</li>
+					<li>Design: <a href="#">HTML5 UP</a></li>
+					<li>Demo Images: <a href="#">Unsplash</a></li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+</html>
