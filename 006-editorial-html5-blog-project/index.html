@@ -5,6 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Editorial HTML 5 Blog Project</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -29,8 +35,8 @@
 			</div>
 			<!-- navigation -->
 			<nav>
-				<h2>Menu</h2>
-				<ul>
+				<h3>Menu</h3>
+				<ul role="list">
 					<li>homepage</li>
 					<li>generic</li>
 					<li>elements</li>
@@ -45,7 +51,7 @@
 			</nav>
 			<!-- articles-short -->
 			<div class="articles-short">
-				<h2></h2>
+				<h3>Ante interdum</h3>
 				<div class="article-short">
 					<img src="assets/images/pic07.jpg" alt="" />
 					<p>
@@ -74,13 +80,13 @@
 			</div>
 			<!-- contacts -->
 			<div class="contact-details">
-				<h2>Get in touch</h2>
+				<h3>Get in touch</h3>
 				<p>
 					Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit
 					lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam
 					facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
 				</p>
-				<ul>
+				<ul role="list">
 					<li><i class="fa-solid fa-envelope"></i> information@untitled.tld</li>
 					<li><i class="fa-solid fa-phone-flip"></i> (000) 000-0000</li>
 					<li>
@@ -102,15 +108,13 @@
 		<!-- main container -->
 		<!-- header -->
 		<!-- Hamburger Toggle - position absolute? & aria-labels -->
-		<button class="hamburger-toggle">
+		<button class="hamburger-toggle" data-type="toggle-menu">
 			<i class="fa-solid fa-bars"></i>
 		</button>
 		<!-- End of Hamburger Toggle -->
-		<header>
-			<p><span>Editorial </span>by HTML5 UP</p>
-			<!-- add aria-labels -->
+		<header class="wrapper margin-bottom-48">
 			<nav class="socials-navigation">
-				<ul class="social-icons-list">
+				<ul class="social-icons-list" role="list">
 					<li class="social-icon-item">
 						<a href="#"><i class="fa-brands fa-twitter"></i></a>
 					</li>
@@ -128,15 +132,20 @@
 					</li>
 				</ul>
 			</nav>
+			<p class="ff-serif underline-5px-accent padding-bottom-16">
+				<span class="clr-neutral-900">Editorial </span>by HTML5 UP
+			</p>
+			<!-- add aria-labels -->
 		</header>
 		<!-- main article -->
 		<main>
-			<article class="main-article">
-				<img class="main-article--img" src="assets/images/pic10.jpg" alt="" />
-				<div class="main-article--text">
+			<article class="main-article wrapper flow margin-bottom-24">
+				<img class="main-article__img" src="assets/images/pic10.jpg" alt="" />
+				<div class="main-article__text flow underline-2px padding-bottom-24">
 					<h1>Hi, I'm Editorial by HTML5 UP</h1>
-					<p>A FREE AND FULLY RESPONSIVE SITE TEMPLATE</p>
-
+					<p class="ff-serif tt-uppercase margin-bottom-24">
+						A FREE AND FULLY RESPONSIVE SITE TEMPLATE
+					</p>
 					<p>
 						Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
 						aliquam facilisis ante interdum congue. Integer mollis, nisl amet
@@ -148,10 +157,10 @@
 				</div>
 			</article>
 			<!-- section with specs -->
-			<section>
+			<section class="wrapper margin-bottom-24">
 				<h2>Erat lacinia</h2>
-				<div class="specs-cards">
-					<div class="spec-card">
+				<div class="specs-cards padding-bottom-24 underline-2px">
+					<div class="spec-card flow">
 						<i class="fa-regular fa-gem" aria-hidden="true"></i>
 						<h3>Portitor ullamcorper</h3>
 						<p>
@@ -160,7 +169,7 @@
 							lorem feugiat tempus aliquam.
 						</p>
 					</div>
-					<div class="spec-card">
+					<div class="spec-card flow">
 						<i class="fa-solid fa-rocket" aria-hidden="true"></i>
 						<h3>Portitor ullamcorper</h3>
 						<p>
@@ -169,7 +178,7 @@
 							lorem feugiat tempus aliquam.
 						</p>
 					</div>
-					<div class="spec-card">
+					<div class="spec-card flow">
 						<i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
 						<h3>Portitor ullamcorper</h3>
 						<p>
@@ -178,7 +187,7 @@
 							lorem feugiat tempus aliquam.
 						</p>
 					</div>
-					<div class="spec-card">
+					<div class="spec-card flow">
 						<i class="fa-solid fa-signal" aria-hidden="true"></i>
 						<h3>Portitor ullamcorper</h3>
 						<p>
@@ -189,12 +198,12 @@
 					</div>
 				</div>
 			</section>
-			<!-- section with small articles -->
-			<section>
-				<h2>Ipsum sed dolor</h2>
-				<section class="article-cards">
-					<div class="article-card">
-						<img src="assets/images/pic01.jpg" alt="" class="img" />
+			<!-- section with articles -->
+			<section class="wrapper">
+				<h2 class="margin-bottom-24">Ipsum sed dolor</h2>
+				<section class="article-cards flow">
+					<div class="article-card flow">
+						<img src="assets/images/pic01.jpg" alt="" class="card__img" />
 						<h3>Interdum aenean</h3>
 						<p>
 							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
@@ -203,55 +212,65 @@
 						</p>
 						<button>More</button>
 					</div>
-					<div class="article-card">
-						<img src="assets/images/pic02.jpg" alt="" class="img" />
-						<h3>Nulla amet dolore</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-							lorem feugiat tempus aliquam.
-						</p>
-						<button>More</button>
+					<div class="article-card flow">
+						<img src="assets/images/pic02.jpg" alt="" class="card__img" />
+						<div class="card__content flow">
+							<h3>Nulla amet dolore</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+								dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+								lorem feugiat tempus aliquam.
+							</p>
+							<button>More</button>
+						</div>
 					</div>
-					<div class="article-card">
-						<img src="assets/images/pic03.jpg" alt="" class="img" />
-						<h3>Tempus ullamcorper</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-							lorem feugiat tempus aliquam.
-						</p>
-						<button>More</button>
+					<div class="article-card flow">
+						<img src="assets/images/pic03.jpg" alt="" class="card__img" />
+						<div class="card__content flow">
+							<h3>Tempus ullamcorper</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+								dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+								lorem feugiat tempus aliquam.
+							</p>
+							<button>More</button>
+						</div>
 					</div>
-					<div class="article-card">
-						<img src="assets/images/pic04.jpg" alt="" class="img" />
-						<h3>Sed etiam facilis</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-							lorem feugiat tempus aliquam.
-						</p>
-						<button>More</button>
+					<div class="article-card flow">
+						<img src="assets/images/pic04.jpg" alt="" class="card__img" />
+						<div class="card__content flow">
+							<h3>Sed etiam facilis</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+								dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+								lorem feugiat tempus aliquam.
+							</p>
+							<button>More</button>
+						</div>
 					</div>
-					<div class="article-card">
-						<img src="assets/images/pic05.jpg" alt="" class="img" />
-						<h3>Feugiat lorem aenean</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-							lorem feugiat tempus aliquam.
-						</p>
-						<button>More</button>
+					<div class="article-card flow">
+						<img src="assets/images/pic05.jpg" alt="" class="card__img" />
+						<div class="card__content flow">
+							<h3>Feugiat lorem aenean</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+								dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+								lorem feugiat tempus aliquam.
+							</p>
+							<button>More</button>
+						</div>
 					</div>
-					<div class="article-card">
-						<img src="assets/images/pic06.jpg" alt="" class="img" />
-						<h3>Amet varius aliquam</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-							lorem feugiat tempus aliquam.
-						</p>
-						<button>More</button>
+					<div class="article-card flow">
+						<img src="assets/images/pic06.jpg" alt="" class="card__img" />
+						<div class="card__content flow">
+							<h3>Amet varius aliquam</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+								dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+								lorem feugiat tempus aliquam.
+							</p>
+							<button>More</button>
+						</div>
 					</div>
 				</section>
 			</section>

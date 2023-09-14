@@ -1,6 +1,6 @@
 # codedamn - Editorial HTML5 Blog Project
 
-![Design for the project](https://raw.githubusercontent.com/codedamn-projects/editorial-html5-blog-project/master/assets/desktop-design-non-fs.jpg)
+![Design for the project](designs/desktop-design-non-fs.jpg)
 
 ## Hello developer!
 
