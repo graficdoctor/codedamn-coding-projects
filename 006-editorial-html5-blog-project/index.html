@@ -22,7 +22,7 @@
 	</head>
 	<body>
 		<!-- big menu -->
-		<section>
+		<section class="big-menu">
 			<!-- search -->
 			<div class="search-area">
 				<input
@@ -31,84 +31,94 @@
 					id="search-input"
 					placeholder="Search"
 				/>
-				<i class="fa-solid fa-magnifying-glass"></i>
+				<button type="button" data-type="naked">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
 			</div>
 			<!-- navigation -->
-			<nav>
-				<h3>Menu</h3>
-				<ul role="list">
-					<li>homepage</li>
-					<li>generic</li>
-					<li>elements</li>
-					<li>submenu <i class="fa-solid fa-chevron-down"></i></li>
-					<li>etiam dolore</li>
-					<li>adipiscing</li>
-					<li>another submenu <i class="fa-solid fa-chevron-down"></i></li>
-					<li>maximus erat</li>
-					<li>sapien mauris</li>
-					<li>amet lacinia</li>
-				</ul>
-			</nav>
-			<!-- articles-short -->
-			<div class="articles-short">
-				<h3>Ante interdum</h3>
-				<div class="article-short">
-					<img src="assets/images/pic07.jpg" alt="" />
+			<section class="wrapper-big-menu bg-neutral-200">
+				<nav role="navigation padding-top-16">
+					<h3 class="underline-5px-accent padding-bottom-16 margin-bottom-24">
+						Menu
+					</h3>
+					<ul class="nav-links" role="list">
+						<li>homepage</li>
+						<li>generic</li>
+						<li>elements</li>
+						<li>submenu <i class="fa-solid fa-chevron-down"></i></li>
+						<li>etiam dolore</li>
+						<li>adipiscing</li>
+						<li>another submenu <i class="fa-solid fa-chevron-down"></i></li>
+						<li>maximus erat</li>
+						<li>sapien mauris</li>
+						<li>amet lacinia</li>
+					</ul>
+				</nav>
+				<!-- articles-short -->
+				<div class="articles-short">
+					<h3 class="underline-5px-accent padding-bottom-16 margin-bottom-24">
+						Ante interdum
+					</h3>
+					<div class="article-short">
+						<img src="assets/images/pic07.jpg" class="article-img" alt="" />
+						<p>
+							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+							dolore aliquam.
+						</p>
+					</div>
+					<div class="article-short">
+						<img src="assets/images/pic08.jpg" class="article-img" alt="" />
+						<p>
+							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+							dolore aliquam.
+						</p>
+					</div>
+					<div class="article-short">
+						<img src="assets/images/pic09.jpg" class="article-img" alt="" />
+						<p>
+							Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+							dolore aliquam.
+						</p>
+					</div>
+					<button>more</button>
+				</div>
+				<!-- contacts -->
+				<div class="contact-details padding-top-16">
+					<h3 class="underline-5px-accent padding-bottom-16 margin-bottom-24">
+						Get in touch
+					</h3>
 					<p>
-						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-						Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-						tempus aliquam.
+						Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit
+						lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam
+						facilisis ante interdum. Sed nulla amet lorem feugiat tempus
+						aliquam.
+					</p>
+					<ul role="list">
+						<li>
+							<i class="fa-solid fa-envelope"></i> information@untitled.tld
+						</li>
+						<li><i class="fa-solid fa-phone-flip"></i> (000) 000-0000</li>
+						<li>
+							<i class="fa-solid fa-house"></i> 1234 Somewhere Road #8254
+							Nashville, TN 00000-0000
+						</li>
+					</ul>
+				</div>
+				<!-- footer -->
+				<div class="menu-footer">
+					<p>
+						&copy; Untitled. All rights reserved. Demo Images:
+						<a href="">Unsplash</a>. Design: <a href="">HTML5 UP</a>.
 					</p>
 				</div>
-				<div class="article-short">
-					<img src="assets/images/pic08.jpg" alt="" />
-					<p>
-						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-						Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-						tempus aliquam.
-					</p>
-				</div>
-				<div class="article-short">
-					<img src="assets/images/pic09.jpg" alt="" />
-					<p>
-						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-						Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-						tempus aliquam.
-					</p>
-				</div>
-				<button>more</button>
-			</div>
-			<!-- contacts -->
-			<div class="contact-details">
-				<h3>Get in touch</h3>
-				<p>
-					Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit
-					lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam
-					facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-				</p>
-				<ul role="list">
-					<li><i class="fa-solid fa-envelope"></i> information@untitled.tld</li>
-					<li><i class="fa-solid fa-phone-flip"></i> (000) 000-0000</li>
-					<li>
-						<i class="fa-solid fa-house"></i> 1234 Somewhere Road #8254
-						Nashville, TN 00000-0000
-					</li>
-				</ul>
-			</div>
-			<!-- footer -->
-			<div class="menu-footer">
-				<p>
-					&copy; Untitled. All rights reserved. Demo Images:
-					<a href="">Unsplash</a>. Design: <a href="">HTML5 UP</a>.
-				</p>
-			</div>
+			</section>
 		</section>
 		<!-- end of big menu -->
 
 		<!-- main container -->
 		<!-- header -->
 		<!-- Hamburger Toggle - position absolute? & aria-labels -->
-		<button class="hamburger-toggle" data-type="toggle-menu">
+		<button class="hamburger-toggle" data-type="naked">
 			<i class="fa-solid fa-bars"></i>
 		</button>
 		<!-- End of Hamburger Toggle -->
