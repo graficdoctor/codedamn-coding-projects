@@ -136,7 +136,7 @@ h3 {
 h2 span {
 	font-size: var(--fs-800);
 	position: relative;
-  padding-bottom: 0.75rem;
+	padding-bottom: 0.75rem;
 }
 
 h2 span::after {
@@ -179,6 +179,7 @@ header {
 	margin-bottom: 1.5rem;
 	position: relative;
 	z-index: 1;
+	margin-top: 1.5rem;
 }
 
 header::before {
@@ -191,8 +192,7 @@ header::before {
 }
 
 .search-area {
-	padding-inline: 1rem;
-	padding-block: 2rem;
+	padding: 1rem 1rem 2rem;
 	margin-bottom: 2rem;
 	background-color: var(--clr-neutral-300);
 	max-width: 100%;
@@ -211,7 +211,7 @@ header::before {
 .search-area button {
 	position: absolute;
 	height: 80%;
-	top: 10%;
+	top: 0;
 	right: 0;
 	aspect-ratio: 1;
 }
@@ -291,6 +291,25 @@ ul.nav-links {
 	border-bottom: 1px solid var(--clr-neutral-400);
 }
 
+.nav-links .submenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-links .submenu button {
+	color: var(--clr-neutral-400);
+	font-size: 0.75rem;
+	scale: 1;
+	padding: 0;
+}
+
+.nav-links .submenu button:hover,
+.nav-links .submenu button:focus {
+	color: var(--clr-accent-400);
+	transform: rotate(180deg);
+}
+
 .articles-short {
 	padding-block: 1rem 3rem;
 	margin-bottom: 2rem;
@@ -351,23 +370,9 @@ ul.nav-links {
 }
 
 @media (min-width: 40em) {
-	.spec-cards,
-	.article-cards {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(250px, 416px));
-		gap: 2rem;
-	}
-
-	.article-card {
-		padding-bottom: 1.5em;
-		border-bottom: 1px solid var(--clr-neutral-400);
-	}
-}
-
-@media (min-width: 50em) {
 	body {
 		display: grid;
-		grid-template-columns: minmax(250px, 320px) 2rem minmax(250px, 60em);
+		grid-template-columns: minmax(250px, 320px) 3rem minmax(250px, 60em);
 		grid-template-areas:
 			'aside ht header'
 			'aside ht main';
@@ -379,7 +384,10 @@ ul.nav-links {
 	}
 
 	.hamburger-toggle {
+		margin-top: 1rem;
 		align-self: start;
+		grid-area: ht;
+		/* display: none; */
 	}
 
 	main {
@@ -389,6 +397,46 @@ ul.nav-links {
 	header {
 		grid-area: header;
 		width: 100%;
+	}
+
+	.spec-cards,
+	.article-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.article-card {
+		padding-bottom: 1.5em;
+		border-bottom: 1px solid var(--clr-neutral-400);
+	}
+}
+
+.main-article button {
+	margin-top: 2rem;
+}
+
+@media (min-width: 55em) {
+	.main-article {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.main-article button {
+		width: max-content;
+	}
+
+	.main-article__img {
+		order: 2;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.main-article__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
 	}
 }
 
@@ -430,6 +478,10 @@ ul.nav-links {
 
 .padding-bottom-24 {
 	padding-bottom: 1.5em;
+}
+
+.padding-bottom-48 {
+	padding-bottom: 3em;
 }
 
 .clr-neutral-900 {
