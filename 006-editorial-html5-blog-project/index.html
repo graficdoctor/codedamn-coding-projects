@@ -19,10 +19,11 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
 	</head>
 	<body>
 		<!-- big menu -->
-		<section class="big-menu">
+		<section class="big-menu" id="big-menu" data-open="false">
 			<!-- search -->
 			<div class="search-area">
 				<input
@@ -36,7 +37,7 @@
 				</button>
 			</div>
 			<!-- navigation -->
-			<section class="wrapper-big-menu bg-neutral-200">
+			<section class="wrapper-big-menu padding-bottom-32 bg-neutral-200">
 				<nav role="primary-navigation">
 					<h3 class="padding-bottom-16 margin-bottom-24">
 						<span>Menu</span>
@@ -93,7 +94,9 @@
 					<button>more</button>
 				</div>
 				<!-- contacts -->
-				<div class="contact-details padding-top-16 padding-bottom-24 underline-2px">
+				<div
+					class="contact-details padding-top-16 padding-bottom-24 underline-2px"
+				>
 					<h3 class="padding-bottom-16 margin-bottom-24">
 						<span>Get in touch</span>
 					</h3>
@@ -106,7 +109,9 @@
 					<ul class="flow fa-ul">
 						<li class="underline-1px padding-bottom-32">
 							<span class="fa-li"> <i class="fa-solid fa-envelope"></i></span>
-							<a href="mailto:information@untitled.tld">information@untitled.tld</a>
+							<a href="mailto:information@untitled.tld"
+								>information@untitled.tld</a
+							>
 						</li>
 						<li class="underline-1px padding-bottom-32">
 							<span class="fa-li"><i class="fa-solid fa-phone-flip"></i></span>
@@ -130,7 +135,7 @@
 		<!-- end of big menu -->
 
 		<!-- Hamburger Toggle - aria-labels -->
-		<button class="hamburger-toggle" data-type="naked">
+		<button class="hamburger-toggle" id="hamburger-toggle" data-type="naked">
 			<i class="fa-solid fa-bars"></i>
 		</button>
 		<!-- End of Hamburger Toggle -->
